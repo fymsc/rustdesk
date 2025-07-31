@@ -1,0 +1,7 @@
+1.4.1-2
+	1. 修改libs/hbb_common/src/config.rs，APP_NAME为KeKeYunRustDesk,这个名字对应Andorid内部的名字，外面的名字不会更改，对应Windows快捷桌面和卸载程序的名字，快捷目标不会对应改变
+	2. 修改rustdesk/flutter/android/app/src/main/AndroidManifest.xml android:label="KeKeYunRustDesk",这个名字对应Android外部的名字
+	3. 修改rustdesk\flutter\windows\CMakeLists.txt set(BINARY_NAME "rustdesk") 为KeKeYunRustDesk,还在修改下面第4个选项
+	4. 修改rustdesk\res\msi\preprocess.py内大约有5处"RustDesk"为"KeKeYunRustDesk"
+	遗留的问题：
+		Windowsx64.exe无法运行，无法安装,.msi 桌面名字还是rustdesk,没有变成KeKeYunRustDesk,快捷方式是对的
