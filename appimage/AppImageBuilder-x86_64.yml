@@ -18,7 +18,7 @@ AppDir:
     id: rustdesk
     name: rustdesk
     icon: rustdesk
-    version: 1.4.7031
+    version: 1.4.7032
     exec: usr/share/rustdesk/rustdesk
     exec_args: $@
   apt:
