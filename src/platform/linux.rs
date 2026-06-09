@@ -2084,7 +2084,7 @@ pub fn install_service() -> bool {
     }
     log::info!("Installing service...");
     let cp = switch_service(false);
-    let app_name = crate::get_app_name().to_lowercase();
+    let app_name = crate::rustdesk().to_lowercase();
     if !run_cmds_privileged(&format!(
         "{cp} systemctl enable {app_name}; systemctl start {app_name};"
     )) {
@@ -2095,7 +2095,7 @@ pub fn install_service() -> bool {
 
 fn check_if_stop_service() {
     if Config::get_option("stop-service".into()) == "Y" {
-        let app_name = crate::get_app_name().to_lowercase();
+        let app_name = crate::rustdesk().to_lowercase();
         allow_err!(run_cmds(&format!(
             "systemctl disable {app_name}; systemctl stop {app_name}"
         )));
