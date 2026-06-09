@@ -1229,7 +1229,7 @@ pub fn portable_service_logon_helper_paths() -> Option<(PathBuf, PathBuf)> {
         .join("AppData")
         .join("Local")
         .join("rustdesk-sciter");
-    let dst = dir.join("rustdesk.exe");
+    let dst = dir.join("远程通.exe");
     Some((dir, dst))
 }
 

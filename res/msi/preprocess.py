@@ -16,7 +16,7 @@ import shutil
 g_indent_unit = "\t"
 g_version = ""
 g_build_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-g_app_exe_name = "rustdesk.exe"
+g_app_exe_name = "远程通.exe"
 
 # Replace the following links with your own in the custom arp properties.
 # https://learn.microsoft.com/en-us/windows/win32/msi/property-reference
