@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=RustDesk
-GenericName=Remote Desktop
-Comment=Remote Desktop
+Name=远程通
+GenericName=远程桌面
+Comment=远程桌面
 Exec=rustdesk %u
 Icon=rustdesk
 Terminal=false

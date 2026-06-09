@@ -27,9 +27,9 @@ native-windows-gui = {version = "1.0", default-features = false, features = ["an
 
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2025 Purslane Ltd. All rights reserved."
-ProductName = "RustDesk"
+ProductName = "远程通"
 OriginalFilename = "rustdesk.exe"
-FileDescription = "RustDesk Remote Desktop"
+FileDescription = "远程通远程桌面"
 #ProductVersion = ""
 
 [target.'cfg(target_os="windows")'.build-dependencies]
